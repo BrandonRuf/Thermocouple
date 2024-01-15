@@ -14,7 +14,7 @@
 bool _debug = false;
 
 SCPI_Parser Controller;
-Adafruit_MAX31856 thermocouple = Adafruit_MAX31856(10, 11, 12, 13);
+Adafruit_MAX31856 thermocouple = Adafruit_MAX31856(11,10,9,8); // Use software SPI: CS, DI, DO, CLK
 
 // CHECK CONVERSION READY FLAG in ADAFRUIT CODE, IT"S NOT RESETTING
 // ADD FAULT functions
